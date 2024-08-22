@@ -92,7 +92,7 @@ The dataset consists of user posts categorized into three categories:
 ## Clustering
 Clustering is conducted on both In Favor and Against Statements for each Position, as illustrated in the diagram below:
 
-<img src="images/ORBIS_Clustering.png" alt="BCAUSE Clustering" width="500"/>
+<img src="images/ORBIS_Clustering.png" alt="BCAUSE Clustering"/>
 
 In detail:
 1. **Clustering**: KMeans algorithm is applied to cluster both "In Favor" and "Against" statements for each position.
@@ -104,7 +104,7 @@ In detail:
 
 Post-clustering, the `text2KG` script constructs a Knowledge Graph based on the following ontology:
 
-<img src="images/ORBIS_Ontology.png" height="700">
+<img src="images/ORBIS_Ontology.png" height="900">
 
 <br><br><br><br>
 
