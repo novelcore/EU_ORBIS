@@ -88,7 +88,7 @@ The dataset consists of user posts categorized into three categories:
 - **Positions:** The main stances or topics of discussion. 
 - **Arguments in Favor:** Supporting arguments for each position. 
 - **Arguments Against:** Counterarguments to each position.
-
+<br><br><br>
 ## Clustering
 Clustering is conducted on both In Favor and Against Statements for each Position, as illustrated in the diagram below:
 
@@ -99,6 +99,7 @@ In detail:
 2. **Summarization**: Each cluster is summarized using a combination of extractive and abstractive methods.
 3. **Keyphrases**: The top 5 keyphrases are identified for each cluster using the [LMRank](https://ieeexplore.ieee.org/document/10179894) algorithm.
 4. **Titles**: A concise title is generated for each cluster using the GPT model.
+<br><br><br>
 
 ## Ontology and Knowledge Graph Construction
 
