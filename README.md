@@ -107,7 +107,6 @@ Post-clustering, the `text2KG` script constructs a Knowledge Graph based on the 
 
 <img src="images/ORBIS_Ontology.png" height="900">
 
-<br><br><br><br>
 
 An extra step, **Semantic Enrichment** of KG was also implemented. Specifically, an **Entity Linking System** was used, which links entity mentions in nodes of KG to their corresponding entities in Wikipedia. The process is illustrated in the diagram below:
 
