@@ -1,5 +1,11 @@
-from neo4j import GraphDatabase
+"""
+This script defines a class for managing connections to a Neo4j database. 
+It includes methods for initializing the connection, running queries, closing the connection, 
+and obtaining the database schema. 
+The class supports cleaning the database and fetching node and relationship properties.
+"""
 
+from neo4j import GraphDatabase
 
 class Neo4jConnection:
     def __init__(self, uri, user, pwd) -> None:

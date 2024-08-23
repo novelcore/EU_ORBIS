@@ -1,3 +1,11 @@
+"""
+This script processes text data to build a knowledge graph in Neo4j. 
+It involves cleaning and preprocessing text, creating nodes and relationships in the graph, 
+and enriching the knowledge graph with external data from Wikidata. 
+The script handles various types of nodes, including subject, position, and argument nodes, 
+and links them with entities and relationships based on extracted triplets.
+"""
+
 import re
 from tqdm import tqdm
 from .wikidata import *

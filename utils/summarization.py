@@ -1,3 +1,13 @@
+"""
+This script facilitates text summarization and keyphrase extraction. 
+It supports combining multiple text fragments into a single string, 
+performing both extractive and abstractive summarization, and extracting keyphrases. 
+The summarization processes can be fine-tuned with parameters for algorithm choice, 
+sentence limits, and token limits, including hybrid methods that integrate both 
+extractive and abstractive techniques. Keyphrase extraction is also available,
+focusing on extracting and deduplicating the most relevant phrases from the text.
+"""
+
 import math
 from typing import List, Union, TypeVar
 

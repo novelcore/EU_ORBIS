@@ -1,3 +1,13 @@
+"""
+This script is designed for text preprocessing, model loading, and data extraction. 
+It includes functions for cleaning and normalizing text, removing stopwords, and handling special characters. 
+It also supports loading and managing various NLP models, including spaCy and Hugging Face models. 
+Additionally, the script extracts and processes discussion data from a specific format,
+organizing positions and associated arguments into a structured DataFrame. 
+The script facilitates the setup and utilization of NLP models for various tasks, 
+including text preprocessing and discussion analysis.
+"""
+
 import re
 import nltk
 import spacy

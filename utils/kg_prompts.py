@@ -1,3 +1,12 @@
+"""
+This script is designed to extract and process ontology
+terms and their relationships from text. It uses OpenAI's 
+GPT-3.5 Turbo to generate a network graph of key terms and 
+their relations, based on a predefined prompt. 
+The script includes functionality for retrieving and processing 
+term pairs and their relationships from given input text.
+"""
+
 import sys
 sys.path.append("..")
 import json

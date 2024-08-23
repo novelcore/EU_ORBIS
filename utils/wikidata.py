@@ -1,3 +1,12 @@
+"""
+This script interacts with Wikidata to fetch descriptions and 
+uses the Refined model for entity extraction from text. It retrieves
+descriptions of entities from Wikidata and processes text to identify and 
+detail entities, including their Wikipedia titles, labels, Wikidata IDs, 
+and descriptions, while providing links to their Wikidata pages. 
+The script supports GPU acceleration for enhanced performance.
+"""
+
 import torch
 from typing import Dict, Any  
 from wikidata.client import Client

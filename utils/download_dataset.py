@@ -1,3 +1,9 @@
+"""
+This script provides functions to interact with the BCAUSE API. 
+The functions handle authentication, URL configuration, and API 
+requests, with default settings if not provided.
+"""
+
 import time
 import requests
 from tqdm import tqdm
@@ -50,7 +56,7 @@ def get_discussions(settings: Dict[str, str] = None) -> List[Dict[str, Any]]:
     """
     # Initialize the URL and the authorization token.
     settings = settings or {
-        "auth_token": '7fdcbaf2562c9dab2a12fa740fab6e176d3d6f16',
+        "auth_token": '...',
         "discussion_url": 'https://europe-west1-bcause-alpha01.cloudfunctions.net/getDiscussionsV2/',
     }
 
@@ -78,7 +84,7 @@ def get_discussion_details(discussion_id: str, settings: Dict[str, str] = None) 
     """
     # Initialize URLs and the authorization token.
     settings = settings or {
-        "auth_token": '7fdcbaf2562c9dab2a12fa740fab6e176d3d6f16',
+        "auth_token": '...',
         "discussion_posts_url": 'https://europe-west1-bcause-alpha01.cloudfunctions.net/getContributionsV2',
         "discussion_participants_url": 'https://europe-west1-bcause-alpha01.cloudfunctions.net/getParticipantsV2',
     }

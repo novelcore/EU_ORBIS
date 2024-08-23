@@ -200,9 +200,12 @@ Here is the relationships with their propertirs in detail:
   - *Meaning:* Indicates that a specific entity has associated Wikidata data.
   - *Properties:* None specified for this relationship.
   
-An extra step, **Semantic Enrichment** of KG was also implemented. Specifically, an **Entity Linking System** was used, which links entity mentions in nodes of KG to their corresponding entities in Wikidata. The process is illustrated in the diagram below:
+An extra step, **Semantic Enrichment** of KG was also implemented. Specifically, an **Entity Linking System** was used, which links entity mentions in nodes of KG to their corresponding entities in Wikidata. For this feature the [ReFinED](https://github.com/amazon-science/ReFinED) library was used. The process is illustrated in the diagram below:
 
 <img src="images/KG_Entity_Linking.png" alt="KG Diagram" width="600">
 
 ## Contact
-Ioannis Eftsathiou (efstathiou@novelcore.eu)
+- George Domalis (domalis@novelcore.eu)
+- Dimitris Charalambakis (dcharalampakis@novelcore.eu)
+- Ioannis Eftsathiou (efstathiou@novelcore.eu)
+- Alexandra Apostolopoulou (apostolopoulou@novelcore.eu)

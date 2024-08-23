@@ -1,3 +1,13 @@
+"""
+This script handles text clustering using KMeans. 
+It includes:
+- Preprocessing and dimensionality reduction with UMAP.
+- Determining the optimal number of clusters.
+- Generating summaries, keyphrases, and titles for each cluster.
+
+The script is designed to process text embeddings and provide detailed cluster insights.
+"""
+
 import os
 import ast
 import torch
