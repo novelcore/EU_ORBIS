@@ -80,7 +80,14 @@ Alternatively, you can run all the scripts sequentially with:
     sh bash.sh
 ```
 
-**Note**: Before running the scripts, ensure that the **OpenAI API key** and **Neo4j credentials** are defined in the `config.yaml` file, as these are necessary for the clusterng pipeline and generating the Knowledge Graph.
+**Note**:  Before executing the scripts, make sure to specify the following in the `config.yaml` file:
+
+- **OpenAI API Key**
+- **Neo4j Credentials**
+- **Auth Token**
+- **Embeddings Model (from Hugging Face)**
+
+These configurations are essential for the clustering pipeline and for generating the Knowledge Graph.
 
 ## Data
 This repository contains the implementation of ORBIS Project in **BCAUSE** dataset.
@@ -107,8 +114,93 @@ Post-clustering, the `text2KG` script constructs a Knowledge Graph based on the 
 
 <img src="images/ORBIS_Ontology.png" height="900">
 
+Here is the nodes with their propertirs in detail:
 
-An extra step, **Semantic Enrichment** of KG was also implemented. Specifically, an **Entity Linking System** was used, which links entity mentions in nodes of KG to their corresponding entities in Wikipedia. The process is illustrated in the diagram below:
+- **SUBJECT**
+  - *id (STRING):* Unique identifier for the `SUBJECT` node.
+  - *author_id (STRING):* Unique identifier for the author of the content.
+  - *title (STRING):* The title of the subject.
+  - *tagline (STRING):* A brief tagline or description for the subject.
+
+- **POSITION**
+  - *id (STRING):* Unique identifier for the `POSITION` node.
+  - *author_id (STRING):* Unique identifier for the author of the content.
+  - *text (STRING):* The content associated with the position.
+  
+- **AGAINST**
+  - *id (STRING):* Unique identifier for the `AGAINST` node.
+  - *author_id (STRING):* Unique identifier for the author of the content.
+  - *text (STRING):* The content associated with the `AGAINST` position.
+
+- **INFAVOR**
+  - *id (STRING):* Unique identifier for the `INFAVOR` node.
+  - *author_id (STRING):* Unique identifier for the author of the content.
+  - *text (STRING):* The content associated with the `INFAVOR` position.
+  
+- **ENTITY**
+  - *value (STRING):* The specific text triplet associated with the entity.
+
+- **WIKI**
+  - *id (STRING):* Unique identifier for the `WIKI` node.
+  - *wiki_id (STRING):* Unique identifier for the Wikidata entry.
+  - *description (STRING):* A detailed description of the Wikidata article or entry.
+  - *label (STRING):* The label associated with the Wikidata entry.
+  - *tag (STRING):* Tags associated with the Wikidata entry.
+  - *wiki_url (STRING):* The URL of the Wikidata entry.
+
+- **CLUSTER**
+  - *id (STRING):* Unique identifier for the `CLUSTER` node.
+  - *summary (STRING):* A brief summary describing the cluster.
+  - *title (STRING):* The title of the cluster.
+
+- **KEYPHRASE**
+  - *id (STRING):* Unique identifier for the `KEYPHRASE` node.
+  - *keyphrase (STRING):* A key phrase associated with the content.
+
+<br>
+Here is the relationships with their propertirs in detail:
+
+- **HAS_POSITION**
+  - *Description:* Connects `SUBJECT` nodes to `POSITION` nodes.
+  - *Meaning:* Indicates that a specific subject has a particular position.
+  - *Properties:* None specified for this relationship.
+
+- **HAS_INFAVOR**
+  - *Description:* Connects `POSITION` nodes to `INFAVOR` nodes.
+  - *Meaning:* Indicates that a specific position has a particular favor.
+  - *Properties:* None specified for this relationship.
+
+- **HAS_AGAINST**
+  - *Description:* Connects `POSITION` nodes to `AGAINST` nodes.
+  - *Meaning:* Indicates that a specific position has a particular opposition.
+  - *Properties:* None specified for this relationship.
+
+- **MENTION**
+  - *Description:* Connects `INFAVOR` nodes and `AGAINST` nodes to `ENTITY` nodes.
+  - *Meaning:* Indicates that a specific favor or opposition mentions a particular entity (triplet).
+  - *Properties:* None specified for this relationship.
+
+- **HAS_POST**
+  - *Description:* Connects `CLUSTER` nodes to `AGAINST` nodes and `INFAVOR` nodes.
+  - *Meaning:* Indicates that a specific cluster contains a particular favor or opposition.
+  - *Properties:* None specified for this relationship.
+
+- **HAS_KEYPHRASE**
+  - *Description:* Connects `CLUSTER` nodes to `KEYPHRASE` nodes.
+  - *Meaning:* Indicates that a specific cluster contains a particular keyphrase.
+  - *Properties:* None specified for this relationship.
+
+- **RELATION**
+  - *Description:* Connects `ENTITY` nodes to other `ENTITY` nodes.
+  - *Meaning:* Indicates that one entity is related to another entity (triplet).
+  - *Properties:* None specified for this relationship.
+
+- **HAS_WIKI_DATA**
+  - *Description:* Connects `ENTITY` nodes to `WIKI` nodes.
+  - *Meaning:* Indicates that a specific entity has associated Wikidata data.
+  - *Properties:* None specified for this relationship.
+  
+An extra step, **Semantic Enrichment** of KG was also implemented. Specifically, an **Entity Linking System** was used, which links entity mentions in nodes of KG to their corresponding entities in Wikidata. The process is illustrated in the diagram below:
 
 <img src="images/KG_Entity_Linking.png" alt="KG Diagram" width="600">
 

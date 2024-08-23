@@ -1,7 +1,6 @@
 import re
-import json
 from tqdm import tqdm
-from .wiki_data import *
+from .wikidata import *
 from .kg_prompts import retrieve_triplets
 from .neo4j_connection import Neo4jConnection
 
@@ -51,9 +50,9 @@ def text2KG(data: Dict[str, Any]=None, neo4j_settings: Dict[str, str]=None, clea
     """
     # Set default Neo4j settings if not provided
     neo4j_settings = neo4j_settings or {
-                                        "connection_url": "neo4j+s://c1f16148.databases.neo4j.io",
-                                        "username": "neo4j",
-                                        "password": "9G8El-Vuef7aSWjLGPrm4-LdYPIQHCyVomA5Mp3bNR8",
+                                        "connection_url": "...",
+                                        "username": "...",
+                                        "password": "...",
                                     }
     
     # Create Graph-Database in Neo4j

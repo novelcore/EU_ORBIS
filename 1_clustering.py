@@ -14,6 +14,7 @@ if __name__ == "__main__":
     # Access dataset paths from the configuration
     input_dir = config['general']['input_path_discussion']
     output_dir = config['general']['output_cluster_dir']
+    embs_model = config['general']['embeddings_model']
 
     # Set OpenAI api-key
     your_api_key = config['model_parameters']['openai_api_key']
@@ -26,7 +27,7 @@ if __name__ == "__main__":
     
     bcause_data_with_clusters = clustering_and_preprocess(
                                                             bcause_data=bcause_data, 
-                                                            embs_model = "jinaai/jina-embedding-t-en-v1", 
+                                                            embs_model = embs_model, 
                                                             cluster_threshold = 6, 
                                                             save_model = False
                                                         )

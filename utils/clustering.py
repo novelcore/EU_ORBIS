@@ -1,13 +1,11 @@
 import os
 import ast
-import json
 import torch
 import pickle
 import numpy as np
 from utils.utils import *
 import umap.umap_ as umap
 from openai import OpenAI
-from pandas import DataFrame
 from typing import Any, Dict
 from utils.summarization import *
 from sklearn.cluster import KMeans
@@ -66,7 +64,7 @@ def clustering(embeddings: np.ndarray=None, print_stat:bool=True, tuning: bool=T
     
     if(tuning):
         # Find the optimal number of clusters
-        num_clusters = find_optimal_clusters(embeddings, 2, 10)
+        num_clusters = find_optimal_clusters(embeddings, 2, 15)
     else:
         num_clusters = 3
 
@@ -132,7 +130,7 @@ def generate_keyphrases(cluster_dict: Dict[int, Any], models: Tuple[Any, Any, An
 
     return posts_keyphrases
 
-def generate_titles(keyphrases_text: str=None, summaries_text: str=None, num_clusters: int=0, subject: str=None) -> Dict[int, str]:
+def generate_titles(summaries_text: str=None, num_clusters: int=0, subject: str=None) -> Dict[int, str]:
     """
     Generate titles for each cluster using specified models.
 
@@ -148,13 +146,12 @@ def generate_titles(keyphrases_text: str=None, summaries_text: str=None, num_clu
     prompt = gpt_prompt.format(
                                     num_topics=num_clusters, 
                                     subject=subject, 
-                                    keyphrases_text=keyphrases_text, 
                                     summaries_text=summaries_text
                                 )
 
     # Prepare messages for ChatGPT-based models
     messages = [
-            { "role": "system", "content": "You are an AI expert in creating titles for specific topics based on a list of keyphrases and summaries." },
+            { "role": "system", "content": "You are an AI expert in creating titles for specific topics based on a list of summaries." },
             { "role": "user", "content": prompt },
         ]
 
@@ -213,7 +210,6 @@ def clustering_details(cluster_dict: Dict[int, Any], subject: str=None, num_clus
 
     # Generate titles
     cluster_titles = generate_titles(
-                                        keyphrases_text=keyphrases_text,
                                         summaries_text=summaries_text,
                                         num_clusters=num_clusters, 
                                         subject=subject, 
@@ -230,13 +226,13 @@ def clustering_details(cluster_dict: Dict[int, Any], subject: str=None, num_clus
     return results
 
 
-def clustering_and_preprocess(bcause_data: Dict[str, Any]=None, embs_model: str = "jinaai/jina-embedding-t-en-v1", cluster_threshold: int=6, save_model: bool=False) -> Dict[str, Any]:
+def clustering_and_preprocess(bcause_data: Dict[str, Any]=None, embs_model: str = None, cluster_threshold: int=6, save_model: bool=False) -> Dict[str, Any]:
     """
     Perform clustering and preprocessing on the input DataFrame of Positions and Arguments.
 
     Args:
         bcause_data (Dict[str, Any]): The JSON object containing bcause data.
-        model_name (str): The name of the SentenceTransformer embeddings model to load. Defaults to "jinaai/jina-embedding-t-en-v1".
+        model_name (str): The name of the SentenceTransformer embeddings model to load.
         cluster_threshold (int): The threshold for the number of arguments required to perform clustering.
         save_model (bool): Whether to save the model. Default is False.
 
