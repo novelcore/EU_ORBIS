@@ -1,0 +1,19 @@
+general:
+  input_path_discussions: "Data/raw/BCAUSE_data.json"
+  input_path_discussion: "Data/raw/BCAUSE_data_one_discussion.json"
+  output_cluster_dir: "Data/results/clustering_results.json"
+  embeddings_model: "..."
+  neo4j_settings : {
+                      "connection_url": "...",
+                      "username": "...",
+                      "password": "...",
+                  }
+  auth_bcause_settings : {
+                            "auth_token" : '...',
+                            "discussion_url" : 'https://europe-west1-bcause-alpha01.cloudfunctions.net/getDiscussionsV2/',
+                            "discussion_posts_url" : 'https://europe-west1-bcause-alpha01.cloudfunctions.net/getContributionsV2',
+                            "discussion_participants_url" : 'https://europe-west1-bcause-alpha01.cloudfunctions.net/getParticipantsV2',
+                        }
+
+model_parameters:
+  openai_api_key: "..."
