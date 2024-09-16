@@ -207,5 +207,5 @@ An extra step, **Semantic Enrichment** of KG was also implemented. Specifically,
 ## Contact
 - George Domalis (domalis@novelcore.eu)
 - Dimitris Charalambakis (dcharalampakis@novelcore.eu)
-- Ioannis Eftsathiou (efstathiou@novelcore.eu)
+- Ioannis Efstathiou (efstathiou@novelcore.eu)
 - Alexandra Apostolopoulou (apostolopoulou@novelcore.eu)
