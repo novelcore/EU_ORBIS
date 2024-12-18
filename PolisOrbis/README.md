@@ -99,7 +99,7 @@ Given the unstructured nature of the POLIS dataset compared to Bcause, we introd
 ## Clustering
 Clustering is conducted on both In Favor and Against Statements for each Position, as illustrated in the diagram below:
 
-<img src="images/Polis_Clustering.png" alt="Polis Clustering"/>
+<img src="images/POLIS_Clustering.png" alt="Polis Clustering"/>
 
 In detail:
 1. **Clustering**: KMeans algorithm is applied to cluster both "In Favor" and "Against" statements for each position.
