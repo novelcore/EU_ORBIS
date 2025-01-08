@@ -1,0 +1,18 @@
+general:
+  input_path_discussions: "Data/raw/polis_conversation.json"
+  input_path_discussion: "Data/raw/polis_comments.json"
+  output_cluster_dir: "Data/results/clustering_results.json"
+  embeddings_model: "..."
+  neo4j_settings : {
+                      "connection_url": "...",
+                      "username": "...",
+                      "password": "...",
+                  }
+  auth_polis_settings : {
+                            "server_domain" : "https://polisorbis.copernicani.it",
+                        }
+
+  conversation_id: "..."
+
+model_parameters:
+  openai_api_key: "..."
