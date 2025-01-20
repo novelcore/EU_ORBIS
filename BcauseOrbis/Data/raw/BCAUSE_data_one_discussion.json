@@ -954,6 +954,17 @@
             "last_update_timestamp":1622208088895
         },
         {
+            "id":"-OG8xm_todseVCZjcwFK",
+            "author_id":"5v1mS16jduQv6im0cO2Td3uc1PJ3",
+            "text":"agree\n",
+            "discussion_type":"argument_for",
+            "linked_parent_item":"-MamQElMbEPywXYD238M",
+            "linked_children_items":[],
+            "upvotes":0,
+            "creation_timestamp":1736407719820,
+            "last_update_timestamp":1736407719820
+        },
+        {
             "id":"-ManExvcyimoUwA03wZ4",
             "author_id":"2IB9DzpVidXCztoGnBu8un5mOnC2",
             "text":"Climate Change is the main issue \nIt causes a lot damage to our environment \nThanks to some of the volunteers who are helping to fix the issue by sharing the issues in mass media to cover up a lot of people ",
@@ -1658,6 +1669,17 @@
             "last_update_timestamp":1622372914325
         },
         {
+            "id":"-ODcwo6YnYBhau59FaMw",
+            "author_id":"mAb0iCjZzMcNEDX2Kx8FxCR6Pbu1",
+            "text":"The poor behavior is others is not obviously a good reason to emulate it. Even without sufficient action from other countries, the US is big enough to have a huge impact, in terms of GHG reduction and technology development, all on its own.",
+            "discussion_type":"argument_against",
+            "linked_parent_item":"-Mawwrr5A0wDkY6GGRlX",
+            "linked_children_items":[],
+            "upvotes":0,
+            "creation_timestamp":1733706232590,
+            "last_update_timestamp":1733706232590
+        },
+        {
             "id":"-MayNKnojmsiNU4CIO8-",
             "author_id":"nAR2skZlM3hggxlKAOTxGmPJsDX2",
             "text":"I tend to think that the government subsidizes too much already ",
@@ -1968,7 +1990,7 @@
         {
             "id":"-NdExdyr4778L9OkGZvS",
             "author_id":"WSWVwU1qRjfKDOPnBgdXxpBGIE42",
-            "text":"C'est la construction en elle même qui produit du gaz à effet de serre. Que les voiture soient électrique ou qu'elles roulent avec du pétrole ne change rien.",
+            "text":"C'est la construction en elle m\u00eame qui produit du gaz \u00e0 effet de serre. Que les voiture soient \u00e9lectrique ou qu'elles roulent avec du p\u00e9trole ne change rien.",
             "discussion_type":"argument_against",
             "linked_parent_item":"-MbCZcs7L8PYVzJ7DbKm",
             "linked_children_items":[],
@@ -1979,7 +2001,7 @@
         {
             "id":"-NdExdyvftKLKgpAsF_Z",
             "author_id":"WSWVwU1qRjfKDOPnBgdXxpBGIE42",
-            "text":"L'avantage réside dans la baisse de pollution des grands centres urbains. Mais le réchauffement global ne baissera pas comme cela",
+            "text":"L'avantage r\u00e9side dans la baisse de pollution des grands centres urbains. Mais le r\u00e9chauffement global ne baissera pas comme cela",
             "discussion_type":"argument_for",
             "linked_parent_item":"-MbCZcs7L8PYVzJ7DbKm",
             "linked_children_items":[],
@@ -2177,7 +2199,7 @@
         {
             "id":"-MbMYmCwa0W3bs1_8bLZ",
             "author_id":"Cc2cZvxQkxSESdQiw4MkbXCADWN2",
-            "text":"We need to talk more about the climate change because the future generation will affect due to the climate change. The atmosphere and oceans are already filled with CO2. They can’t take any longer . If they might , we might not be experiencing the rapid global climate change we experience daily. So we need to protect climate for our future generation.",
+            "text":"We need to talk more about the climate change because the future generation will affect due to the climate change. The atmosphere and oceans are already filled with CO2. They can\u2019t take any longer . If they might , we might not be experiencing the rapid global climate change we experience daily. So we need to protect climate for our future generation.",
             "discussion_type":"argument_for",
             "linked_parent_item":"-MbMLSgpI1xpZ1r8CVdY",
             "linked_children_items":[],
@@ -2320,6 +2342,17 @@
             "upvotes":0,
             "creation_timestamp":1694519207852,
             "last_update_timestamp":1694519207852
+        },
+        {
+            "id":"-OG8xTMnwvgHTfvPi_A1",
+            "author_id":"5v1mS16jduQv6im0cO2Td3uc1PJ3",
+            "text":"In the other hand, if we don't try to do something then we lost allready\n",
+            "discussion_type":"argument_against",
+            "linked_parent_item":"-OG8woRwOmHYRI7y-f0A",
+            "linked_children_items":[],
+            "upvotes":0,
+            "creation_timestamp":1736407619069,
+            "last_update_timestamp":1736407619069
         },
         {
             "id":"-M_1YdSI2g-N2cgAzDU-",
@@ -2576,7 +2609,8 @@
                 "-MamQEtP5_w3JYvNt2cM",
                 "-MamQExOKXRHEKXRzuCG",
                 "-MamoOiqmUPJKiD50SxT",
-                "-Man7l7FLor1sHr-n5x3"
+                "-Man7l7FLor1sHr-n5x3",
+                "-OG8xm_todseVCZjcwFK"
             ],
             "upvotes":0,
             "creation_timestamp":1622196157579,
@@ -3285,7 +3319,9 @@
             "text":"If people can start separating strategies to help the earth and politics, I would be more apt to believe it.   An example is the new green deal that is being proposed in the US.  When you read it, a majority is about socialist policies and overreach of the government and is not relevant in anyway to climate change.  Other agreements let large polluters like China and India off the hook while expecting a disproportionate amount from the US.   This makes me very cynical about the overall agenda behind it.",
             "discussion_type":"position",
             "linked_parent_item":"",
-            "linked_children_items":[],
+            "linked_children_items":[
+                "-ODcwo6YnYBhau59FaMw"
+            ],
             "upvotes":0,
             "creation_timestamp":1622372745588,
             "last_update_timestamp":1622372745588
@@ -4178,9 +4214,32 @@
             "discussion_type":"position",
             "linked_parent_item":"",
             "linked_children_items":[],
-            "upvotes":0,
             "creation_timestamp":1718371417098,
             "last_update_timestamp":1718371417098
+        },
+        {
+            "id":"-OE-yYpFbUvKgyMpVuhH",
+            "author_id":"297351727231796524",
+            "text":"The planet has its long, long history and doesn't need man at all. How are we sure that climate change is damaging to the planet and not just man?",
+            "discussion_type":"position",
+            "linked_parent_item":"",
+            "linked_children_items":[],
+            "upvotes":0,
+            "creation_timestamp":1734109445502,
+            "last_update_timestamp":1734109445502
+        },
+        {
+            "id":"-OG8woRwOmHYRI7y-f0A",
+            "author_id":"5v1mS16jduQv6im0cO2Td3uc1PJ3",
+            "text":"It is a lost cause, guys. I gave up long time ago",
+            "discussion_type":"position",
+            "linked_parent_item":"",
+            "linked_children_items":[
+                "-OG8xTMnwvgHTfvPi_A1"
+            ],
+            "upvotes":0,
+            "creation_timestamp":1736407467842,
+            "last_update_timestamp":1736407467842
         }
     ],
     "participants":[
@@ -4207,6 +4266,24 @@
             "pseudo":"mojojo",
             "creation_timestamp":1651658802602,
             "last_update_timestamp":1651658802602
+        },
+        {
+            "id":"295823758860485357",
+            "pseudo":"ETUNI",
+            "creation_timestamp":1734031167696,
+            "last_update_timestamp":1734031167696
+        },
+        {
+            "id":"295977339173470957",
+            "pseudo":"Ilias Siachos",
+            "creation_timestamp":1737022808433,
+            "last_update_timestamp":1737022808433
+        },
+        {
+            "id":"297351727231796524",
+            "pseudo":"Elina Makri",
+            "creation_timestamp":1734109436659,
+            "last_update_timestamp":1734109436659
         },
         {
             "id":"2IB9DzpVidXCztoGnBu8un5mOnC2",
@@ -4329,6 +4406,12 @@
             "last_update_timestamp":1717748117044
         },
         {
+            "id":"92YDZTlLNdVw8IZVAlCSWUyj8aK2",
+            "pseudo":"he",
+            "creation_timestamp":1736520151433,
+            "last_update_timestamp":1736520151433
+        },
+        {
             "id":"9LTDYLLHWAgG7RibcuaI3k7QJo52",
             "pseudo":"Ms. Nina Casper",
             "creation_timestamp":1622634763789,
@@ -4359,10 +4442,22 @@
             "last_update_timestamp":1642780082983
         },
         {
+            "id":"B2V2jSIDDuU3d9zZ9FLfCnOrlsj1",
+            "pseudo":"DimitraK",
+            "creation_timestamp":1734283564965,
+            "last_update_timestamp":1734283564965
+        },
+        {
             "id":"B4U3tGwkkTO1lcI1pQAkaBEbMJ43",
             "pseudo":"",
             "creation_timestamp":1640601258529,
             "last_update_timestamp":1640601258529
+        },
+        {
+            "id":"B9Ayy6cEZVay17hCM3eEjTFkgW22",
+            "pseudo":"CaterinaB",
+            "creation_timestamp":1734450218043,
+            "last_update_timestamp":1734450218043
         },
         {
             "id":"CKuubr0U7UhXcbOHIqsDu8ahOo73",
@@ -4509,6 +4604,12 @@
             "last_update_timestamp":1714984758011
         },
         {
+            "id":"NOaSKBJqaHTKPaOKnZKlLPXOpzt2",
+            "pseudo":"FrancescaDT",
+            "creation_timestamp":1736410504233,
+            "last_update_timestamp":1736410504233
+        },
+        {
             "id":"O3Iu2KKqL1SGd3f6Q32E4jYkYQ42",
             "pseudo":"petrap",
             "creation_timestamp":1715605496004,
@@ -4551,6 +4652,12 @@
             "last_update_timestamp":1622644016196
         },
         {
+            "id":"PwcL7rbZlUZLUhbzNHdROsiPjgV2",
+            "pseudo":"Alex",
+            "creation_timestamp":1733071448126,
+            "last_update_timestamp":1733071448126
+        },
+        {
             "id":"RpJ4St2asHb5SBOcQ0uWz8ZEJS12",
             "pseudo":"kordaris",
             "creation_timestamp":1692887240350,
@@ -4567,6 +4674,12 @@
             "pseudo":"sar",
             "creation_timestamp":1665502149483,
             "last_update_timestamp":1665502149483
+        },
+        {
+            "id":"SQMymHmHyQcxh4Seq6fklI8kts32",
+            "pseudo":"GiulioF",
+            "creation_timestamp":1736410526796,
+            "last_update_timestamp":1736410526796
         },
         {
             "id":"SlGm703Az8UHWkNgKTsuhlf7jIA2",
@@ -4639,6 +4752,12 @@
             "pseudo":"Justin Borer",
             "creation_timestamp":1622193490591,
             "last_update_timestamp":1622193490591
+        },
+        {
+            "id":"c4bFK93Rmja3iqJn2H3Fp0JumHk2",
+            "pseudo":"lucas3",
+            "creation_timestamp":1726226338876,
+            "last_update_timestamp":1726226338876
         },
         {
             "id":"cAXrSL2F4xVp6XTlrddt2Z6v2sl1",
@@ -4737,6 +4856,12 @@
             "last_update_timestamp":1622197833679
         },
         {
+            "id":"gjoWZU1FeZgGK0mbVxRzKqgWPlv1",
+            "pseudo":"LucianaP",
+            "creation_timestamp":1736410618820,
+            "last_update_timestamp":1736410618820
+        },
+        {
             "id":"gv4JnT00dVOwxl12GfqnQolL4p92",
             "pseudo":"jmgonzalezdelalamo",
             "creation_timestamp":1676028104953,
@@ -4831,6 +4956,12 @@
             "pseudo":"Dale Grimes",
             "creation_timestamp":1622696754294,
             "last_update_timestamp":1622696754294
+        },
+        {
+            "id":"mAb0iCjZzMcNEDX2Kx8FxCR6Pbu1",
+            "pseudo":"mark.klein",
+            "creation_timestamp":1733706496882,
+            "last_update_timestamp":1733706496882
         },
         {
             "id":"mLz1pEfADgSwIfamHVpb7yPsn212",
@@ -4929,6 +5060,12 @@
             "last_update_timestamp":1716801952820
         },
         {
+            "id":"s8fvptF6OfgfzUHdSQ5xIM1iod12",
+            "pseudo":"TommasoP",
+            "creation_timestamp":1736410531103,
+            "last_update_timestamp":1736410531103
+        },
+        {
             "id":"sTCVsiUuDiczMAs9ZzqyeVAUBIh2",
             "pseudo":"onurkaya",
             "creation_timestamp":1692362786851,
@@ -4951,6 +5088,12 @@
             "pseudo":"Anonymous Participant",
             "creation_timestamp":1724165496109,
             "last_update_timestamp":1724165496109
+        },
+        {
+            "id":"uL1WuGILQzgxs9ox6JDaeArWvnA3",
+            "pseudo":"Ellie",
+            "creation_timestamp":1734109180528,
+            "last_update_timestamp":1734109180528
         },
         {
             "id":"uYB4Nt84I9PnyCSQ553JHDHdkrD2",
@@ -5060,11 +5203,5 @@
             "creation_timestamp":1622838279190,
             "last_update_timestamp":1622838279190
         }
-    ],
-    "author_id":"NbZpWoDgerQ8HQMLyq01Mfa4FsY2",
-    "creation_timestamp":1620319239396,
-    "last_update_timestamp":1620319239396,
-    "title":"How Can Manmade Climate Change Be Reversed? Is that even possible?",
-    "tagline":"CO2 reaches historic levels everyday. Earth's global temperatures are record-breaking each year for the past decade. People react to these shocking statistics by being eco-friendly and going meatless. But is it enough? Have we gone past the point of no return?\n\nThe Earth's global temperature is predicted to go up by about 3 degrees Celsius by 2100. This discussion delves into the possibility of whether or not we can halt or reverse the global warming trend before it's too late.",
-    "image":"https://firebasestorage.googleapis.com/v0/b/kmiou-because-mturk004.appspot.com/o/debates%2F-M_1YNLl74hj1-KvS_vL%2Fimage.png?alt=media&token=f36a20df-9cfb-4a85-b79a-9f342fd957fd"
+    ]
 }
