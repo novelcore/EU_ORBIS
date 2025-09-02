@@ -11,6 +11,7 @@ This repository contains the implementation of EU project: ORBIS
   - [How to run](#how-to-run)
   - [Data](#data)
   - [Clustering](#clustering)
+  - [Policy Recommendations](#policy-recommendations)
   - [Ontology and Knowledge Graph Construction](#ontology-and-knowledge-graph-construction)
   - [Improvements](#improvements)
   - [Versions](#versions)
@@ -72,9 +73,10 @@ pip3 install git+https://github.com/NC0DER/LMRank/
 
 4. Run
 ```
-    python3 0_download_polis.py  # Downloads data from Polis API
-    python3 1_clustering.py       # Perfom clustering in data
-    python3 2_text2KG.py          # Creates a KG from the user comments
+    python3 0_download_polis.py        # Downloads data from Polis API
+    python3 1_clustering.py            # Perfom clustering in data
+    python3 2_text2KG.py               # Creates a KG from the user comments
+    python3 3_policy_recommendations.py # Generates policy recommendations from clusters
 ```
 
 Alternatively, you can run all the scripts sequentially with:
@@ -106,7 +108,20 @@ In detail:
 2. **Summarization**: Each cluster is summarized using a combination of extractive and abstractive methods.
 3. **Keyphrases**: The top 5 keyphrases are identified for each cluster using the [LMRank](https://ieeexplore.ieee.org/document/10179894) algorithm.
 4. **Titles**: A concise title is generated for each cluster using the GPT model.
+5. **Policy Recommendations**: Actionable policy recommendations are generated for each cluster based on the cluster summary and title.
 <br><br><br>
+
+## Policy Recommendations
+
+After clustering and summarization, the `3_policy_recommendations.py` script generates actionable policy recommendations for each cluster. This process leverages GPT models to analyze cluster summaries and titles, providing structured policy guidance based on citizen feedback.
+
+**Key Features:**
+- **Cluster-based Analysis**: Generates recommendations for each identified cluster
+- **Contextual Understanding**: Uses both cluster title and summary for comprehensive analysis
+- **Actionable Format**: Provides structured, bullet-point recommendations
+- **Policy-focused**: Specifically tailored for policy-making contexts
+
+**Output Format:** The recommendations are saved as JSON with cluster IDs as keys, containing cluster titles and corresponding policy recommendations.
 
 ## Ontology and Knowledge Graph Construction
 
@@ -213,6 +228,11 @@ sentiment groups: "In favor" and "Against", based on the feedback's stance relat
 
 ## Versions
 
+- Version 0.3
+  - Added AI-powered policy recommendation system
+  - Integrated 4-step pipeline: Data Download → Clustering → Knowledge Graph → Policy Recommendations
+  - GPT-based policy recommendation generation from cluster summaries
+  - Structured JSON output format for policy recommendations
 - Version 0.2
   - Support retrieving data from Pol.is-ORBIS
   - Include opinion classification component for classifying the feedbacks of Pol.is-ORBIS to "In favor" and "Against"
@@ -225,6 +245,5 @@ sentiment groups: "In favor" and "Against", based on the feedback's stance relat
 
 ## Contact
 - George Domalis (domalis@novelcore.eu)
-- Dimitris Charalambakis (dcharalampakis@novelcore.eu)
 - Ioannis Efstathiou (efstathiou@novelcore.eu)
 - Alexandra Apostolopoulou (apostolopoulou@novelcore.eu)
