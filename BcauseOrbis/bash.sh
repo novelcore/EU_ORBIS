@@ -29,6 +29,8 @@ echo -e "\033[94mStart Clustering Pipeline...\033[0m"
 execute_step "1_clustering.py"
 echo -e "\033[94mStart text2KG Pipeline...\033[0m"
 execute_step "2_text2KG.py"
+echo -e "\033[94mStart Policy Recommendations Pipeline...\033[0m"
+execute_step "3_policy_recommendations.py"
 
 # Calculate elapsed time
 end_time=$(date +%s%N)

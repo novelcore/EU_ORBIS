@@ -34,3 +34,10 @@ Project duration: 36 months
 
 ## Implementations
 The repository contains two implementations, which can be found in the `BcauseOrbis` and `PolisOrbis` folders.
+
+### Pipeline Overview
+Each implementation follows a 4-step pipeline:
+1. **Data Download**: Retrieves data from respective platforms (BCAUSE/Pol.is)
+2. **Clustering**: Groups similar feedback using Fuzzy C-Means clustering
+3. **Knowledge Graph Construction**: Creates semantic knowledge graphs with entity linking
+4. **Policy Recommendations**: Generates actionable policy recommendations from cluster insights

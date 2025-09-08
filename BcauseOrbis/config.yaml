@@ -2,6 +2,7 @@ general:
   input_path_discussions: "Data/raw/BCAUSE_data.json"
   input_path_discussion: "Data/raw/BCAUSE_data_one_discussion.json"
   output_cluster_dir: "Data/results/clustering_results.json"
+  output_policy_dir: "Data/results/policy_recommendations.json"
   embeddings_model: "..."
   neo4j_settings : {
                       "connection_url": "...",
